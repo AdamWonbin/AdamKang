@@ -1,32 +1,44 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+.portfoliocontainer{
+  height: 100%;
+  width: 100%;
+  background-color: #262624;
+  background-position: center;
+  background-size:contain;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  top: 100%;
 }
 .container{
   height: 100vh;
   width: 100%;
-  background-color: #A79BF2;
+  background-color: #262624;
   background-position: center;
-  background-size: cover;
+  background-size:contain;
   padding-left: 5%;
   padding-right: 5%;
   box-sizing: border-box;
-  position: relative;
+  top: 100%;
 }
 .navbar{
   width: 100%;
-  height: 10vh;
-  margin: auto;
+  height: 80px;
+  margin: 0px;
   display: flex;
   align-items: center;
   text-align: right;
 }
 nav{
   display: flex;
+  justify-content: space-around;
   width: 100%;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 5px 0;s
+  min-height: 8vh;
 }
 nav ul{
   flex: 1;
@@ -70,6 +82,7 @@ nav ul li a:hover::after{
   font-family: rift,sans-serif;
   font-weight: 600;
   font-style: normal;
+  color:#F2F2F2;
 }
 .content h3{
   font-size: 30px;
@@ -77,6 +90,7 @@ nav ul li a:hover::after{
   font-family: rift,sans-serif;
   font-weight: 500;
   font-style: normal;
+  color:#BFBFBF;
 }
 .content{
   margin-left: 10%;
@@ -95,36 +109,52 @@ nav ul li a:hover::after{
   font-family: rift,sans-serif;
   font-weight: 500;
   font-style: normal;
+  background-color: #BFBFBF;
+  color: black;
 }
 .aboutContent{
   margin-top: 50px;
-  width: 25%;
+  width: 50%;
   font-family: sculpin,sans-serif;
   font-weight: 300;
   font-style: normal;
   line-height: 150%;
-  background-color: #C6BDFF;
   padding: 50px;
-  position: fixed;
+  color: black;
+  background-color: #737373;
+  font-weight: bold;
 }
 .aboutTitle{
   display: flex;
   font-family: rift,sans-serif;
   font-weight: 600;
   font-style: normal;
+  color:#BFBFBF;
+  font-size: 50px;
+  background-color: #262624;
 }
 .aboutTitle .info{
   flex: 1;
-  text-align: left;
-  margin-top: 17px;
-  margin-left: 250px;
-  position: fixed;
+  text-align: right;
+  right: 100px;
+  top: 225px;
+  position: absolute;
   color:white;
+  font-size: 20px;
 }
-.pictures{
-  display: flow-root;
-  margin-top: 50%;
+.burger{
+  display: none;
 }
-.dog{
-  width: 50%;
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+.center{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin-top: 50px;
 }
