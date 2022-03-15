@@ -7,31 +7,29 @@
   height: 100%;
   width: 100%;
   background-color: #fffcf8;
-  background-position: center;
+  background-position:center;
   background-size:contain;
   box-sizing: border-box;
   top: 100%;
 }
 .container{
-  height: 100vh;
   width: 100%;
-  background-color: #fffcf8;
+  min-height: 100vh;
+  background-image: url(../images/background.png);
+  background-size: cover;
   background-position: center;
-  background-size:contain;
-  box-sizing: border-box;
-  top: 100%;
+  position: absolute;
+  overflow:hidden;
 }
 .navbar{
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   min-height: 8vh;
-  background-color: #fffcf8;
 }
 nav{
-  display: flex;
-  align-items: center;
-  min-height: 8vh;
+  flex: 1;
+  align-items: right;
 }
 nav ul{
   flex: 1;
@@ -68,15 +66,14 @@ nav ul li a:hover::after{
   width: 50%;
 }
 .content h1{
-  font-size: 120px;
+  font-size: 80px;
   font-weight: 100;
   margin-top: 24px;
   margin-bottom: 15px;
-  color: black;
-  font-family: rift,sans-serif;
-  font-weight: 600;
+  font-family: buena-park-jf,serif;
+  font-weight: 400;
   font-style: normal;
-  color:#0329a2;
+  color:#f43854;
 }
 .content h3{
   font-size: 30px;
@@ -84,14 +81,14 @@ nav ul li a:hover::after{
   font-family: rift,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color:#e70441;
+  color:#21294c;
 }
 .content{
   margin-left: 10%;
   margin-top: 10%;
 }
 .content .school{
-  margin-left: 270px;
+  margin-left: 420px;
   margin-top: 5%;
   display: inline-block;
   background: white;
@@ -99,20 +96,18 @@ nav ul li a:hover::after{
   box-sizing:border-box;
   text-decoration: none;
   font-family: rift,sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
-  background-color: #fffcf8;
-  color: #0329a2;
-  outline: 5px solid #e70441;
+  color: #21294c;
+  outline: 5px solid #f43854;
 }
 .aboutred{
   display: flex;
   font-family: rift,sans-serif;
   font-weight: 600;
   font-style: normal;
-  color:#e70441;
+  color:#f43854;
   font-size: 50px;
-  background-color: #fffcf8;
 }
 .aboutContent{
   margin-top: 50px;
@@ -123,7 +118,6 @@ nav ul li a:hover::after{
   line-height: 150%;
   padding: 50px;
   color: black;
-  background-color: #fffcf8;
   font-weight: bold;
 }
 .aboutTitle{
@@ -131,18 +125,16 @@ nav ul li a:hover::after{
   font-family: rift,sans-serif;
   font-weight: 600;
   font-style: normal;
-  color:#0329a2;
+  color:#21294c;
   font-size: 50px;
-  background-color: #fffcf8;
   padding-left: 50px;
+  padding-top: 50px;
 }
 .aboutTitle .info{
   flex: 1;
-  text-align: right;
-  right: 100px;
-  top: 225px;
+  top: 300px;
   position: absolute;
-  color:#e70441;
+  color:#21294c;
   font-size: 20px;
 }
 .burger{
@@ -160,4 +152,19 @@ nav ul li a:hover::after{
   margin-right: auto;
   width: 75%;
   margin-top: 50px;
+}
+@media only screen and (min-width: 600px) {
+  html{
+    zoom: .8;
+  }
+}
+@media only screen and (min-width: 800px) {
+  html{
+    zoom: .9;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  html{
+    zoom: 1;
+  }
 }
