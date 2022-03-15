@@ -105,6 +105,15 @@ nav ul li a:hover::after{
   color: #0329a2;
   outline: 5px solid #e70441;
 }
+.aboutred{
+  display: flex;
+  font-family: rift,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color:#e70441;
+  font-size: 50px;
+  background-color: #fffcf8;
+}
 .aboutContent{
   margin-top: 50px;
   width: 50%;
