@@ -4,20 +4,19 @@
   box-sizing: border-box;
 }
 .portfoliocontainer{
-  height: 100%;
   width: 100%;
-  background-color: #fffcf8;
-  background-position:center;
-  background-size:contain;
-  box-sizing: border-box;
-  top: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position:sticky;
+
 }
 .container{
   width: 100%;
   min-height: 100vh;
   background-image: url(../images/background.png);
   background-size: cover;
-  background-position: center;
+  background-position:
   position: absolute;
   overflow:hidden;
 }
@@ -146,12 +145,10 @@ nav ul li a:hover::after{
   background-color: white;
   margin: 5px;
 }
-.center{
-  display:block;
+.center {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
-  margin-top: 50px;
 }
 @media only screen and (min-width: 600px) {
   html{
